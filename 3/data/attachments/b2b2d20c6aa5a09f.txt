@@ -1,0 +1,1 @@
+{"status":false,"message":"The email field is required.","error":{"email":["The email field is required."]}}

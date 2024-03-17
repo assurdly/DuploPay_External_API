@@ -1,0 +1,1 @@
+{"status":false,"message":"The card field is required.","error":{"card":["The card field is required."]}}
