@@ -1,0 +1,1 @@
+{"status":true,"message":"Account generated successfully","data":{"account_name":"","account_number":"1047753924","bank_name":"Duplo Bank"}}

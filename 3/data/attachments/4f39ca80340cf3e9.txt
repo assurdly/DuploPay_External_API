@@ -1,0 +1,7 @@
+{
+    "email": "test@email.com",
+    "amount": "1",
+    "currency": "USD",
+    "reference": "20220930091834835846534939",
+    "card" :""
+}

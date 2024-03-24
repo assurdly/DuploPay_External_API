@@ -1,0 +1,33 @@
+{
+    "notify": "transaction",
+    "notifyType": "successful",
+    "data": {
+        "id": 214,
+        "currency": "USD",
+        "amount": "12",
+        "reference": "16456317071506318365",
+        "ip_address": "127.0.0.1",
+        "channel": "card",
+        "type": "transaction",
+        "domain": "test",
+        "fees": "0.42",
+        "plan": null,
+        "requested_amount": "12",
+        "status": "success",
+        "settlement_batchid": null,
+        "created_at": "2022-02-23T15: 55: 07.000000Z",
+        "updated_at": "2022-02-23T15: 55: 34.000000Z",
+        "paid_at": "2022-02-23 15: 55: 34",
+        "customer": {
+            "id": 35,
+            "first_name": null,
+            "last_name": null,
+            "email": "grbmohammed@yahoo.com",
+            "phone": null,
+            "domain": "test",
+            "customer_code": "cus_mobblekyhkwucsh",
+            "metadata": "{}",
+            "status": "active"
+        }
+    }
+}
