@@ -1,0 +1,13 @@
+{
+    "": "sk_live_exnd0gxdxftqfmi4gqybwifziqhf6w7x1syz2kw",
+    "Content-Type": "application/json",
+    "Authorization": "Bearer sk_test_gmbq9kxqr6bc9otiuk10n5tgzotkoiiq0vagf4y",
+    "User-Agent": "PostmanRuntime/7.37.1",
+    "Accept": "*/*",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "e4baae6f-c6ce-45a5-a9d6-a001a50b3db9",
+    "Host": "api.stag.duplopg.com",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Content-Length": "193"
+}

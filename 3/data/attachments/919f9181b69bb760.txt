@@ -1,0 +1,6 @@
+{
+    "email": "test@email.com",
+    "amount": "100",
+    "currency": "",
+    "reference": "21662787365996276350189"
+}
