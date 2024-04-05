@@ -1,0 +1,10 @@
+{
+    "data" :{
+        "number": "",
+        "expiryMonth": "10",
+        "expiryYear": "25",
+        "cvv" : "416",
+        "pin": "1234"
+    },
+    "reference": "202212064539049039343"
+}
