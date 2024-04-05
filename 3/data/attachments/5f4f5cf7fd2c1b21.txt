@@ -1,0 +1,1 @@
+{"success":false,"message":"Amount cannot be less than 1"}

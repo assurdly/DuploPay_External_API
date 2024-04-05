@@ -1,0 +1,6 @@
+{
+    "email": "test@email.com",
+    "amount": "90",
+    "currency": "NGN",
+    "reference": "74762787365996276350189"
+}

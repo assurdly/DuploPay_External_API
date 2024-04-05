@@ -1,5 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Sun Mar 31 16:13:21 GMT 2024","Sun Mar 31 16:13:21 GMT 2024","120","Initialize Transaction","","","","","Negative Amount - Initialize Transaction","There are three main stages in S2S charge:
+"passed","Fri Apr 05 17:31:44 GMT 2024","Fri Apr 05 17:31:44 GMT 2024","196","Initialize Transaction","","","","","Invalid Email - Initialize Transaction","There are three main stages in S2S charge:
 
 1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
 2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
@@ -25,201 +25,7 @@ alt: *Incase you are unable to render the data in HTML, you can make use of alt 
 After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
 
 You are expected to call verify transaction endpoint to know the outcome of transaction."
-"passed","Sun Mar 31 16:13:21 GMT 2024","Sun Mar 31 16:13:21 GMT 2024","254","Initialize Banktransfer Transaction","","","","","Successful - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
-
-1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
-2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
-3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
-    
-
-**Request**
-
-email: *customer email*  
-amount: *transaction amount*  
-currency: *transaction currency*  
-reference: *unique reference must be atleast 16 unique characters*  
-card: *Kindly pass the response of the encrypted card reference.*
-
-**Response**
-
-data: *Kindly render this in the HTML.*
-
-alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
-
-**Additional Info**
-
-After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
-
-You are expected to call verify transaction endpoint to know the outcome of transaction."
-"passed","Sun Mar 31 16:13:20 GMT 2024","Sun Mar 31 16:13:21 GMT 2024","116","Initialize Transaction","","","","","Invalid Email - Initialize Transaction","There are three main stages in S2S charge:
-
-1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
-2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
-3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
-    
-
-**Request**
-
-email: *customer email*  
-amount: *transaction amount*  
-currency: *transaction currency*  
-reference: *unique reference must be atleast 16 unique characters*  
-card: *Kindly pass the response of the encrypted card reference.*
-
-**Response**
-
-data: *Kindly render this in the HTML.*
-
-alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
-
-**Additional Info**
-
-After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
-
-You are expected to call verify transaction endpoint to know the outcome of transaction."
-"failed","Sun Mar 31 16:13:19 GMT 2024","Sun Mar 31 16:13:20 GMT 2024","146","Initialize Transaction","","","","","Successful - Initialize Transaction","There are three main stages in S2S charge:
-
-1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
-2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
-3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
-    
-
-**Request**
-
-email: *customer email*  
-amount: *transaction amount*  
-currency: *transaction currency*  
-reference: *unique reference must be atleast 16 unique characters*  
-card: *Kindly pass the response of the encrypted card reference.*
-
-**Response**
-
-data: *Kindly render this in the HTML.*
-
-alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
-
-**Additional Info**
-
-After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
-
-You are expected to call verify transaction endpoint to know the outcome of transaction."
-"failed","Sun Mar 31 16:13:21 GMT 2024","Sun Mar 31 16:13:21 GMT 2024","138","Initialize Banktransfer Transaction","","","","","Existing Reference - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
-
-1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
-2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
-3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
-    
-
-**Request**
-
-email: *customer email*  
-amount: *transaction amount*  
-currency: *transaction currency*  
-reference: *unique reference must be atleast 16 unique characters*  
-card: *Kindly pass the response of the encrypted card reference.*
-
-**Response**
-
-data: *Kindly render this in the HTML.*
-
-alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
-
-**Additional Info**
-
-After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
-
-You are expected to call verify transaction endpoint to know the outcome of transaction."
-"passed","Sun Mar 31 16:13:19 GMT 2024","Sun Mar 31 16:13:19 GMT 2024","133","Test Encryption","","","","","Empty CVV Field - Test Encryption","**Request**
-
-data: *kindly provide the card details as seen in the sample*
-
-reference: *this must be at least 16 strings long, this stand as the IV key for the encryption. Incase the string is longer than 16, kindly cut out the first 16 strings.*
-
-encryption mode: *aes-128-cbc*
-
-encryption key: your budpay public key"
-"passed","Sun Mar 31 16:13:20 GMT 2024","Sun Mar 31 16:13:20 GMT 2024","129","Initialize Transaction","","","","","Empty Card field - Initialize Transaction","There are three main stages in S2S charge:
-
-1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
-2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
-3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
-    
-
-**Request**
-
-email: *customer email*  
-amount: *transaction amount*  
-currency: *transaction currency*  
-reference: *unique reference must be atleast 16 unique characters*  
-card: *Kindly pass the response of the encrypted card reference.*
-
-**Response**
-
-data: *Kindly render this in the HTML.*
-
-alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
-
-**Additional Info**
-
-After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
-
-You are expected to call verify transaction endpoint to know the outcome of transaction."
-"passed","Sun Mar 31 16:13:20 GMT 2024","Sun Mar 31 16:13:20 GMT 2024","122","Initialize Transaction","","","","","Empty Currency field - Initialize Transaction","There are three main stages in S2S charge:
-
-1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
-2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
-3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
-    
-
-**Request**
-
-email: *customer email*  
-amount: *transaction amount*  
-currency: *transaction currency*  
-reference: *unique reference must be atleast 16 unique characters*  
-card: *Kindly pass the response of the encrypted card reference.*
-
-**Response**
-
-data: *Kindly render this in the HTML.*
-
-alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
-
-**Additional Info**
-
-After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
-
-You are expected to call verify transaction endpoint to know the outcome of transaction."
-"passed","Sun Mar 31 16:13:22 GMT 2024","Sun Mar 31 16:13:22 GMT 2024","128","Test Decryption","","","","","Empty Reference Field - Test Decryption",""
-"passed","Sun Mar 31 16:13:19 GMT 2024","Sun Mar 31 16:13:19 GMT 2024","128","Test Encryption","","","","","Empty Expirymonth Field - Test Encryption","**Request**
-
-data: *kindly provide the card details as seen in the sample*
-
-reference: *this must be at least 16 strings long, this stand as the IV key for the encryption. Incase the string is longer than 16, kindly cut out the first 16 strings.*
-
-encryption mode: *aes-128-cbc*
-
-encryption key: your budpay public key"
-"passed","Sun Mar 31 16:13:18 GMT 2024","Sun Mar 31 16:13:19 GMT 2024","546","Test Encryption","","","","","Successful - Test Encryption","**Request**
-
-data: *kindly provide the card details as seen in the sample*
-
-reference: *this must be at least 16 strings long, this stand as the IV key for the encryption. Incase the string is longer than 16, kindly cut out the first 16 strings.*
-
-encryption mode: *aes-128-cbc*
-
-encryption key: your budpay public key"
-"passed","Sun Mar 31 16:13:19 GMT 2024","Sun Mar 31 16:13:19 GMT 2024","127","Test Encryption","","","","","Empty Number Field - Test Encryption","**Request**
-
-data: *kindly provide the card details as seen in the sample*
-
-reference: *this must be at least 16 strings long, this stand as the IV key for the encryption. Incase the string is longer than 16, kindly cut out the first 16 strings.*
-
-encryption mode: *aes-128-cbc*
-
-encryption key: your budpay public key"
-"passed","Sun Mar 31 16:13:22 GMT 2024","Sun Mar 31 16:13:22 GMT 2024","143","Verify Transaction","","","","","Successful - Verify Transaction",""
-"broken","Sun Mar 31 16:13:23 GMT 2024","Sun Mar 31 16:13:23 GMT 2024","13","Webhook Notification","","","","","Webhook Notification","## Verifying Webhook signature
+"broken","Fri Apr 05 17:31:47 GMT 2024","Fri Apr 05 17:31:47 GMT 2024","12","Webhook Notification","","","","","Webhook Notification","## Verifying Webhook signature
 
 Budpay returns the following in your request headers.
 
@@ -229,7 +35,7 @@ Budpay returns the following in your request headers.
     
 
 Kindly verify if the value got is the same value sent before processing the webhook request. If they are not the same, you can discard the request."
-"passed","Sun Mar 31 16:13:21 GMT 2024","Sun Mar 31 16:13:21 GMT 2024","114","Initialize Banktransfer Transaction","","","","","Empty Currency Field - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
+"passed","Fri Apr 05 17:31:45 GMT 2024","Fri Apr 05 17:31:45 GMT 2024","188","Initialize Banktransfer Transaction","","","","","Empty Amount Field - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
 
 1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
 2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
@@ -255,7 +61,8 @@ alt: *Incase you are unable to render the data in HTML, you can make use of alt 
 After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
 
 You are expected to call verify transaction endpoint to know the outcome of transaction."
-"passed","Sun Mar 31 16:13:21 GMT 2024","Sun Mar 31 16:13:21 GMT 2024","120","Initialize Banktransfer Transaction","","","","","Empty Amount Field - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
+"failed","Fri Apr 05 17:31:46 GMT 2024","Fri Apr 05 17:31:46 GMT 2024","189","Test Decryption","","","","","Successful - Test Decryption",""
+"failed","Fri Apr 05 17:31:44 GMT 2024","Fri Apr 05 17:31:45 GMT 2024","308","Initialize Banktransfer Transaction","","","","","Existing Reference - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
 
 1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
 2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
@@ -281,7 +88,7 @@ alt: *Incase you are unable to render the data in HTML, you can make use of alt 
 After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
 
 You are expected to call verify transaction endpoint to know the outcome of transaction."
-"passed","Sun Mar 31 16:13:20 GMT 2024","Sun Mar 31 16:13:20 GMT 2024","140","Initialize Transaction","","","","","Empty Amount field - Initialize Transaction","There are three main stages in S2S charge:
+"passed","Fri Apr 05 17:31:45 GMT 2024","Fri Apr 05 17:31:46 GMT 2024","190","Initialize Banktransfer Transaction","","","","","Amount Less Than 100 - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
 
 1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
 2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
@@ -307,8 +114,7 @@ alt: *Incase you are unable to render the data in HTML, you can make use of alt 
 After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
 
 You are expected to call verify transaction endpoint to know the outcome of transaction."
-"passed","Sun Mar 31 16:13:22 GMT 2024","Sun Mar 31 16:13:22 GMT 2024","121","Test Decryption","","","","","Empty Data Field - Test Decryption",""
-"passed","Sun Mar 31 16:13:20 GMT 2024","Sun Mar 31 16:13:20 GMT 2024","117","Initialize Transaction","","","","","Empty Reference field - Initialize Transaction","There are three main stages in S2S charge:
+"failed","Fri Apr 05 17:31:42 GMT 2024","Fri Apr 05 17:31:43 GMT 2024","218","Initialize Transaction","","","","","Successful - Initialize Transaction","There are three main stages in S2S charge:
 
 1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
 2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
@@ -334,9 +140,33 @@ alt: *Incase you are unable to render the data in HTML, you can make use of alt 
 After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
 
 You are expected to call verify transaction endpoint to know the outcome of transaction."
-"failed","Sun Mar 31 16:13:22 GMT 2024","Sun Mar 31 16:13:22 GMT 2024","139","Verify Transaction","","","","","Invalid Reference Code - Verify Transaction",""
-"failed","Sun Mar 31 16:13:22 GMT 2024","Sun Mar 31 16:13:23 GMT 2024","131","Test Decryption","","","","","Invalid data - Test Decryption",""
-"passed","Sun Mar 31 16:13:19 GMT 2024","Sun Mar 31 16:13:19 GMT 2024","125","Test Encryption","","","","","Empty Expiryyear Field - Test Encryption","**Request**
+"passed","Fri Apr 05 17:31:45 GMT 2024","Fri Apr 05 17:31:45 GMT 2024","191","Initialize Banktransfer Transaction","","","","","Empty Reference Field - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
+
+1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
+2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
+3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
+    
+
+**Request**
+
+email: *customer email*  
+amount: *transaction amount*  
+currency: *transaction currency*  
+reference: *unique reference must be atleast 16 unique characters*  
+card: *Kindly pass the response of the encrypted card reference.*
+
+**Response**
+
+data: *Kindly render this in the HTML.*
+
+alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
+
+**Additional Info**
+
+After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
+
+You are expected to call verify transaction endpoint to know the outcome of transaction."
+"passed","Fri Apr 05 17:31:42 GMT 2024","Fri Apr 05 17:31:42 GMT 2024","206","Test Encryption","","","","","Empty Reference Field - Test Encryption","**Request**
 
 data: *kindly provide the card details as seen in the sample*
 
@@ -345,7 +175,7 @@ reference: *this must be at least 16 strings long, this stand as the IV key for 
 encryption mode: *aes-128-cbc*
 
 encryption key: your budpay public key"
-"passed","Sun Mar 31 16:13:21 GMT 2024","Sun Mar 31 16:13:22 GMT 2024","117","Initialize Banktransfer Transaction","","","","","Empty Reference Field - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
+"passed","Fri Apr 05 17:31:45 GMT 2024","Fri Apr 05 17:31:45 GMT 2024","188","Initialize Banktransfer Transaction","","","","","Empty Email Field - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
 
 1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
 2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
@@ -371,7 +201,8 @@ alt: *Incase you are unable to render the data in HTML, you can make use of alt 
 After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
 
 You are expected to call verify transaction endpoint to know the outcome of transaction."
-"failed","Sun Mar 31 16:13:20 GMT 2024","Sun Mar 31 16:13:20 GMT 2024","133","Initialize Transaction","","","","","Existing Reference - Initialize Transaction","There are three main stages in S2S charge:
+"failed","Fri Apr 05 17:31:46 GMT 2024","Fri Apr 05 17:31:46 GMT 2024","192","Verify Transaction","","","","","Invalid Reference Code - Verify Transaction",""
+"failed","Fri Apr 05 17:31:44 GMT 2024","Fri Apr 05 17:31:44 GMT 2024","194","Initialize Transaction","","","","","Negative Amount - Initialize Transaction","There are three main stages in S2S charge:
 
 1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
 2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
@@ -397,7 +228,7 @@ alt: *Incase you are unable to render the data in HTML, you can make use of alt 
 After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
 
 You are expected to call verify transaction endpoint to know the outcome of transaction."
-"passed","Sun Mar 31 16:13:22 GMT 2024","Sun Mar 31 16:13:22 GMT 2024","126","Initialize Banktransfer Transaction","","","","","Amount Less Than 100 - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
+"passed","Fri Apr 05 17:31:43 GMT 2024","Fri Apr 05 17:31:43 GMT 2024","199","Initialize Transaction","","","","","Empty Email field - Initialize Transaction","There are three main stages in S2S charge:
 
 1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
 2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
@@ -423,7 +254,33 @@ alt: *Incase you are unable to render the data in HTML, you can make use of alt 
 After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
 
 You are expected to call verify transaction endpoint to know the outcome of transaction."
-"passed","Sun Mar 31 16:13:19 GMT 2024","Sun Mar 31 16:13:19 GMT 2024","119","Test Encryption","","","","","Empty Reference Field - Test Encryption","**Request**
+"passed","Fri Apr 05 17:31:46 GMT 2024","Fri Apr 05 17:31:46 GMT 2024","188","Initialize Banktransfer Transaction","","","","","Invalid Email - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
+
+1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
+2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
+3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
+    
+
+**Request**
+
+email: *customer email*  
+amount: *transaction amount*  
+currency: *transaction currency*  
+reference: *unique reference must be atleast 16 unique characters*  
+card: *Kindly pass the response of the encrypted card reference.*
+
+**Response**
+
+data: *Kindly render this in the HTML.*
+
+alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
+
+**Additional Info**
+
+After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
+
+You are expected to call verify transaction endpoint to know the outcome of transaction."
+"passed","Fri Apr 05 17:31:41 GMT 2024","Fri Apr 05 17:31:41 GMT 2024","749","Test Encryption","","","","","Successful - Test Encryption","**Request**
 
 data: *kindly provide the card details as seen in the sample*
 
@@ -432,7 +289,7 @@ reference: *this must be at least 16 strings long, this stand as the IV key for 
 encryption mode: *aes-128-cbc*
 
 encryption key: your budpay public key"
-"passed","Sun Mar 31 16:13:20 GMT 2024","Sun Mar 31 16:13:20 GMT 2024","126","Initialize Transaction","","","","","Empty Email field - Initialize Transaction","There are three main stages in S2S charge:
+"passed","Fri Apr 05 17:31:45 GMT 2024","Fri Apr 05 17:31:45 GMT 2024","185","Initialize Banktransfer Transaction","","","","","Empty Currency Field - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
 
 1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
 2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
@@ -458,8 +315,9 @@ alt: *Incase you are unable to render the data in HTML, you can make use of alt 
 After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
 
 You are expected to call verify transaction endpoint to know the outcome of transaction."
-"failed","Sun Mar 31 16:13:22 GMT 2024","Sun Mar 31 16:13:22 GMT 2024","133","Test Decryption","","","","","Successful - Test Decryption",""
-"passed","Sun Mar 31 16:13:21 GMT 2024","Sun Mar 31 16:13:21 GMT 2024","117","Initialize Banktransfer Transaction","","","","","Empty Email Field - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
+"passed","Fri Apr 05 17:31:46 GMT 2024","Fri Apr 05 17:31:47 GMT 2024","208","Test Decryption","","","","","Empty Data Field - Test Decryption",""
+"passed","Fri Apr 05 17:31:47 GMT 2024","Fri Apr 05 17:31:47 GMT 2024","196","Test Decryption","","","","","Empty Reference Field - Test Decryption",""
+"passed","Fri Apr 05 17:31:44 GMT 2024","Fri Apr 05 17:31:44 GMT 2024","275","Initialize Banktransfer Transaction","","","","","Successful - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
 
 1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
 2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
@@ -485,7 +343,8 @@ alt: *Incase you are unable to render the data in HTML, you can make use of alt 
 After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
 
 You are expected to call verify transaction endpoint to know the outcome of transaction."
-"passed","Sun Mar 31 16:13:22 GMT 2024","Sun Mar 31 16:13:22 GMT 2024","120","Initialize Banktransfer Transaction","","","","","Invalid Email - Initialize Banktransfer Transaction","There are three main stages in S2S charge:
+"failed","Fri Apr 05 17:31:47 GMT 2024","Fri Apr 05 17:31:47 GMT 2024","185","Test Decryption","","","","","Invalid data - Test Decryption",""
+"passed","Fri Apr 05 17:31:43 GMT 2024","Fri Apr 05 17:31:44 GMT 2024","207","Initialize Transaction","","","","","Empty Reference field - Initialize Transaction","There are three main stages in S2S charge:
 
 1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
 2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
@@ -511,3 +370,144 @@ alt: *Incase you are unable to render the data in HTML, you can make use of alt 
 After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
 
 You are expected to call verify transaction endpoint to know the outcome of transaction."
+"failed","Fri Apr 05 17:31:43 GMT 2024","Fri Apr 05 17:31:43 GMT 2024","195","Initialize Transaction","","","","","Existing Reference - Initialize Transaction","There are three main stages in S2S charge:
+
+1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
+2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
+3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
+    
+
+**Request**
+
+email: *customer email*  
+amount: *transaction amount*  
+currency: *transaction currency*  
+reference: *unique reference must be atleast 16 unique characters*  
+card: *Kindly pass the response of the encrypted card reference.*
+
+**Response**
+
+data: *Kindly render this in the HTML.*
+
+alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
+
+**Additional Info**
+
+After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
+
+You are expected to call verify transaction endpoint to know the outcome of transaction."
+"passed","Fri Apr 05 17:31:43 GMT 2024","Fri Apr 05 17:31:43 GMT 2024","198","Initialize Transaction","","","","","Empty Amount field - Initialize Transaction","There are three main stages in S2S charge:
+
+1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
+2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
+3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
+    
+
+**Request**
+
+email: *customer email*  
+amount: *transaction amount*  
+currency: *transaction currency*  
+reference: *unique reference must be atleast 16 unique characters*  
+card: *Kindly pass the response of the encrypted card reference.*
+
+**Response**
+
+data: *Kindly render this in the HTML.*
+
+alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
+
+**Additional Info**
+
+After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
+
+You are expected to call verify transaction endpoint to know the outcome of transaction."
+"passed","Fri Apr 05 17:31:42 GMT 2024","Fri Apr 05 17:31:42 GMT 2024","195","Test Encryption","","","","","Empty CVV Field - Test Encryption","**Request**
+
+data: *kindly provide the card details as seen in the sample*
+
+reference: *this must be at least 16 strings long, this stand as the IV key for the encryption. Incase the string is longer than 16, kindly cut out the first 16 strings.*
+
+encryption mode: *aes-128-cbc*
+
+encryption key: your budpay public key"
+"passed","Fri Apr 05 17:31:43 GMT 2024","Fri Apr 05 17:31:43 GMT 2024","195","Initialize Transaction","","","","","Empty Currency field - Initialize Transaction","There are three main stages in S2S charge:
+
+1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
+2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
+3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
+    
+
+**Request**
+
+email: *customer email*  
+amount: *transaction amount*  
+currency: *transaction currency*  
+reference: *unique reference must be atleast 16 unique characters*  
+card: *Kindly pass the response of the encrypted card reference.*
+
+**Response**
+
+data: *Kindly render this in the HTML.*
+
+alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
+
+**Additional Info**
+
+After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
+
+You are expected to call verify transaction endpoint to know the outcome of transaction."
+"passed","Fri Apr 05 17:31:42 GMT 2024","Fri Apr 05 17:31:42 GMT 2024","196","Test Encryption","","","","","Empty Expiryyear Field - Test Encryption","**Request**
+
+data: *kindly provide the card details as seen in the sample*
+
+reference: *this must be at least 16 strings long, this stand as the IV key for the encryption. Incase the string is longer than 16, kindly cut out the first 16 strings.*
+
+encryption mode: *aes-128-cbc*
+
+encryption key: your budpay public key"
+"passed","Fri Apr 05 17:31:44 GMT 2024","Fri Apr 05 17:31:44 GMT 2024","192","Initialize Transaction","","","","","Empty Card field - Initialize Transaction","There are three main stages in S2S charge:
+
+1.  *Initiate the payment*: You send the transaction details and the customer's card details to *transaction*/*initialize* endpoints.
+2.  *Authorize the charge*: Render the HTML content returned in data on your payment checkout interface or alternatively redirect to the alt URL. The customer authorizes the charge with their payment provider, such as their card issuer or bank. This completes the payer authentication.
+3.  *Verify the payment*: You'll call our *Verify Transaction API* to verify that the payment was successful before giving value (the *verify transaction* endpoint) or wait to receive webhook notification.
+    
+
+**Request**
+
+email: *customer email*  
+amount: *transaction amount*  
+currency: *transaction currency*  
+reference: *unique reference must be atleast 16 unique characters*  
+card: *Kindly pass the response of the encrypted card reference.*
+
+**Response**
+
+data: *Kindly render this in the HTML.*
+
+alt: *Incase you are unable to render the data in HTML, you can make use of alt link.*
+
+**Additional Info**
+
+After successful transaction, a webhook event will be initiated and sent to the webhook url you set on the dashboard.
+
+You are expected to call verify transaction endpoint to know the outcome of transaction."
+"passed","Fri Apr 05 17:31:46 GMT 2024","Fri Apr 05 17:31:46 GMT 2024","209","Verify Transaction","","","","","Successful - Verify Transaction",""
+"passed","Fri Apr 05 17:31:42 GMT 2024","Fri Apr 05 17:31:42 GMT 2024","204","Test Encryption","","","","","Empty Expirymonth Field - Test Encryption","**Request**
+
+data: *kindly provide the card details as seen in the sample*
+
+reference: *this must be at least 16 strings long, this stand as the IV key for the encryption. Incase the string is longer than 16, kindly cut out the first 16 strings.*
+
+encryption mode: *aes-128-cbc*
+
+encryption key: your budpay public key"
+"passed","Fri Apr 05 17:31:41 GMT 2024","Fri Apr 05 17:31:41 GMT 2024","209","Test Encryption","","","","","Empty Number Field - Test Encryption","**Request**
+
+data: *kindly provide the card details as seen in the sample*
+
+reference: *this must be at least 16 strings long, this stand as the IV key for the encryption. Incase the string is longer than 16, kindly cut out the first 16 strings.*
+
+encryption mode: *aes-128-cbc*
+
+encryption key: your budpay public key"
