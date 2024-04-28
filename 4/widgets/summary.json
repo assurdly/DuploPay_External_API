@@ -1,1 +1,1 @@
-{"reportName":"Duplopay - API Quality Readiness with history","testRuns":[],"statistic":{"failed":7,"broken":0,"skipped":0,"passed":22,"unknown":0,"total":29},"time":{"start":1712338513531,"stop":1712338517933,"duration":4402,"minDuration":118,"maxDuration":524,"sumDuration":4327}}
+{"reportName":"Duplopay - API Quality Readiness with history","testRuns":[],"statistic":{"failed":7,"broken":0,"skipped":0,"passed":22,"unknown":0,"total":29},"time":{"start":1714319759287,"stop":1714319764308,"duration":5021,"minDuration":117,"maxDuration":580,"sumDuration":4944}}
