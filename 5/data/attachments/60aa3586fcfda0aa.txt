@@ -1,0 +1,7 @@
+{
+    "email": "test@email.com",
+    "amount": "2",
+    "currency": "USD",
+    "reference": "20230102091834835846534888",
+    "card" :"874d3262e9b60a05474878fb3a8163c7775197c8774fcaf202e3b11cb21d32a1205f4bf8d3e39a32848b5e4022af5f7b4b09ef95656093d5ee1fb5178c777928e6c2dda7a646b99c03bf5efb5dc3adb5ee51eca9debd25843f0258fca856388e"
+}

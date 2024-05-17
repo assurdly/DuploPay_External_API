@@ -1,0 +1,9 @@
+{
+    "Date": "Fri, 17 May 2024 15:50:06 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Server": "nginx/1.18.0 (Ubuntu)",
+    "Cache-Control": "no-cache, private",
+    "Access-Control-Allow-Origin": "*"
+}

@@ -1,0 +1,1 @@
+{"status":false,"message":"The email must be a valid email address.","error":{"email":["The email must be a valid email address."]}}
