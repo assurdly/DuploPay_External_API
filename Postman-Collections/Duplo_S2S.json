@@ -21,7 +21,7 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
-									"pm.test(\"Status code name has 'OK''\", function () {\r",
+									"pm.test(\"Status code name has 'OK'\", function () {\r",
 									"    pm.response.to.have.status(\"OK\");\r",
 									"});"
 								],
@@ -46,7 +46,6 @@
 							{
 								"key": "",
 								"value": "sk_live_exnd0gxdxftqfmi4gqybwifziqhf6w7x1syz2kw",
-								"type": "text",
 								"disabled": true
 							}
 						],
@@ -423,11 +422,12 @@
 									"pm.test(\"Verify that success returns 'false'\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"false\");\r",
 									"});\r",
-									"pm.test(\"Verify that message returns 'The data.expiry year field is required.'\", function () {\r",
+									"pm.test(\"Verify that 'The data.expiry year field is required.'\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"The data.expiry year field is required.\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -447,7 +447,6 @@
 							{
 								"key": "",
 								"value": "sk_live_exnd0gxdxftqfmi4gqybwifziqhf6w7x1syz2kw",
-								"type": "text",
 								"disabled": true
 							}
 						],
